@@ -33,6 +33,9 @@ export default function Navbar() {
             <Link href="/announcements" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
               Announcements
             </Link>
+            <Link href="/organizations" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
+              RSOs
+            </Link>
             <Link href="/school-calendar" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
               Calendar
             </Link>
