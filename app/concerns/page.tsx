@@ -153,7 +153,7 @@ export default function ConcernsPage() {
 
 // Custom Concern Form Component
 function CustomConcernForm() {
-  const collegePrograms = {
+  const collegePrograms: { [key: string]: string[] } = {
     "CAS": [
       "BS Psychology",
       "BS Biology",
@@ -311,7 +311,7 @@ function CustomConcernForm() {
             disabled={!form.college}
           >
             <option value="" disabled>{form.college ? "Select your program" : "Select college first"}</option>
-            {form.college && collegePrograms[form.college].map((prog) => (
+            {form.college && collegePrograms[form.college]?.map((prog: string) => (
               <option key={prog} value={prog}>{prog}</option>
             ))}
           </select>
