@@ -191,14 +191,14 @@ const collegeCouncils = {
         name: "Elijah Mikkhael Diaz",
         course: "BS Education",
         year: "4th",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CEDUC/DIAZ.jpg",
       },
       {
         position: "Vice President",
         name: "Jasmine Macalalad",
         course: "BS Education",
         year: "4th",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CEDUC/MACALALAD.jpg",
       },
       {
         position: "Secretary",
@@ -226,7 +226,7 @@ const collegeCouncils = {
         name: "Aaron Jon Bautista",
         course: "BS Education",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CEDUC/BAUTISTA.jpg",
       },
       {
         position: "Public Relations Officer",
@@ -247,14 +247,14 @@ const collegeCouncils = {
         name: "Naw Trisha Anne Win",
         course: "BS Education",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CEDUC/WIN.jpg",
       },
       {
         position: "2nd Year Representative",
         name: "Shelley Mae Manlunas",
         course: "BS Education",
         year: "2nd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CEDUC/MANLUNAS.jpg",
       },
       {
         position: "1st Year Representative",
@@ -573,15 +573,15 @@ export default function CollegeCouncilPage({ params }: CouncilParams) {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className={`${heroBg} text-white section-padding`}>
+      <section className={`${heroBg} text-white section-padding shadow-lg`}>
         <div className="max-w-7xl mx-auto text-center">
           <img
             src={council.logo}
             alt={`${council.name} Logo`}
             className="mx-auto mb-4 w-36 h-36 "
           />
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">{council.name}</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">Student Council</p>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg tracking-tight">{council.name}</h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">Student Council '25 - '26</p>
         </div>
       </section>
 
@@ -594,13 +594,12 @@ export default function CollegeCouncilPage({ params }: CouncilParams) {
 
         {/* Council Description */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">{council.name} Student Council</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{council.name} Student Council Officers</h2>
           <p className="text-lg text-gray-600 max-w-3xl">{council.description}</p>
         </div>
 
         {/* Officers */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 pb-2 border-b text-center">Student Council Officers</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {council.officers.map((officer, index) => (
               <div key={index} className="card p-6 text-center hover:shadow-xl transition-all duration-300">
