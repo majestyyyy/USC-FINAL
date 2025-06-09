@@ -118,7 +118,7 @@ const collegeCouncils = [
 		name: "College of Arts and Sciences",
 		slug: "cas",
 		color: "green",
-		logo: "/images/college-logo/cas.png",
+		logo: "/images/logo/cas.png",
 	},
 	{
 		name: "College of Business Administration",
@@ -130,7 +130,7 @@ const collegeCouncils = [
 		name: "College of Education",
 		slug: "ceduc",
 		color: "blue",
-		logo: "/images/college-logo/ceduc.png",
+		logo: "/images/logo/ceduc.png",
 	},
 	{
 		name: "College of Engineering",
@@ -341,7 +341,7 @@ export default function AboutPage() {
 									<img
 										src={council.logo}
 										alt={`${council.name} Logo`}
-										className="w-20 h-20 mx-auto mb-4 object-contain rounded-full bg-white border border-gray-200"
+										className="w-20 h-20 mx-auto mb-4 object-contain"
 									/>
 									<h3 className="text-xl font-semibold mb-2">{council.name}</h3>
 									<p className="text-gray-600">Student Council</p>

@@ -10,35 +10,35 @@ const collegeCouncils = {
     color: "green",
     description:
       "The College of Arts and Sciences Student Council represents students across various disciplines including Psychology, Political Science, Biology, Communication, English, and History programs.",
-    logo: "/logos/cas-logo.png",
+    logo: "/images/logo/cas.png",
     officers: [
       {
         position: "President",
         name: "Miko Angelo Romeo",
         course: "BS Psychology",
         year: "4th",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/President_ROMEO.jpg",
       },
       {
         position: "Vice President",
         name: "Millcen Umali",
         course: "AB Communication",
         year: "4th",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/VicePresident_UMALI.jpg",
       },
       {
         position: "Secretary",
         name: "Janica Jehn Christien Bugaing",
         course: "BS Biology",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/Secretary_BUGAING.jpg",
       },
       {
         position: "Treasurer",
         name: "Aczer Sta. Ana Jr.",
         course: "AB Political Science",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/Treasurer_STA. ANA.jpg",
       },
       {
         position: "Auditor",
@@ -59,7 +59,7 @@ const collegeCouncils = {
         name: "Jamaeca Fresh Damulog",
         course: "AB Communication",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/PRO_DAMULOG.png",
       },
       {
         position: "4th Year Representative",
@@ -73,14 +73,14 @@ const collegeCouncils = {
         name: "Allen Russell Ramos",
         course: "BS Biology",
         year: "3rd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/3rdYearRep_RAMOS.jpg",
       },
       {
         position: "2nd Year Representative",
         name: "Carmela Sophia Itoriaga",
         course: "AB Political Science",
         year: "2nd",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/CAS/2ndYearRep_ITORIAGA.jpg",
       },
       {
         position: "1st Year Representative",
@@ -184,7 +184,7 @@ const collegeCouncils = {
     color: "blue",
     description:
       "The College of Education Student Council represents students from Education, Nutrition, Sports Science, Early Childhood Education, and Special Education programs.",
-    logo: "/logos/ceduc-logo.png",
+    logo: "/images/logo/ceduc.png",
     officers: [
       {
         position: "President",
@@ -578,7 +578,7 @@ export default function CollegeCouncilPage({ params }: CouncilParams) {
           <img
             src={council.logo}
             alt={`${council.name} Logo`}
-            className="mx-auto mb-4 w-36 h-36 object-contain rounded-full"
+            className="mx-auto mb-4 w-36 h-36 "
           />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">{council.name}</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">Student Council</p>
@@ -594,11 +594,6 @@ export default function CollegeCouncilPage({ params }: CouncilParams) {
 
         {/* Council Description */}
         <div className="mb-12">
-          <div
-            className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-${council.color}-100 mb-4`}
-          >
-            <span className={`text-2xl font-bold text-${council.color}-600`}>{council.shortName}</span>
-          </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">{council.name} Student Council</h2>
           <p className="text-lg text-gray-600 max-w-3xl">{council.description}</p>
         </div>
@@ -617,7 +612,7 @@ export default function CollegeCouncilPage({ params }: CouncilParams) {
                     loading="lazy"
                   />
                 </div>
-                <h4 className="text-xl font-semibold mb-1">{officer.name}</h4>
+                <h4 className="text-xl font-semibold mb-1">{officer.name === "No Candidate" ? "Vacant" : officer.name}</h4>
                 <p className={`text-${council.color}-600 font-medium mb-2`}>{officer.position}</p>
                 <p className="text-gray-500 text-sm">{officer.course}</p>
                 {officer.year && <p className="text-gray-500 text-sm">{officer.year} Year</p>}
