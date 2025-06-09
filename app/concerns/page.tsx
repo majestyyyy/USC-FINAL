@@ -7,11 +7,8 @@ export default function ConcernsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-white">
       {/* Hero Section */}
-      <section className="relative gradient-red text-white section-padding overflow-hidden rounded-b-3xl">
-        <div className="relative z-10 max-w-7xl mx-auto text-center">
-          <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <MessageSquare className="h-10 w-10" />
-          </div>
+      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20 shadow-lg rounded-b-3xl">
+        <div className="max-w-7xl mx-auto text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Submit a Concern</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Your voice matters. Share your concerns and suggestions with us.

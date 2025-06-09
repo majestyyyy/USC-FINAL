@@ -162,7 +162,6 @@ export default function CalendarPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
         <div className="max-w-7xl mx-auto text-center">
-          <CalendarIcon className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg tracking-tight">Events Calendar</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">
             Stay updated with all USC events and university activities

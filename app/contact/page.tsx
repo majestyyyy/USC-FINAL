@@ -28,7 +28,6 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding rounded-b-3xl">
         <div className="max-w-7xl mx-auto text-center">
-          <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Get in touch with the USC team. We're here to help and listen.
