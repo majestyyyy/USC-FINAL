@@ -26,7 +26,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding">
+      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding rounded-b-3xl">
         <div className="max-w-7xl mx-auto text-center">
           <Mail className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
@@ -130,24 +130,6 @@ export default function ContactPage() {
                   <li>USC Office is located in the SFC Building</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Emergency Contact */}
-        <div className="mt-12 bg-red-50 border border-red-200 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-red-800 mb-2">Emergency Contact</h3>
-          <p className="text-red-700 mb-4">
-            For urgent matters that require immediate attention, please contact us directly:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <p className="font-medium text-red-800">USC President Hotline:</p>
-              <p className="text-red-700">(0917) 123-4567</p>
-            </div>
-            <div>
-              <p className="font-medium text-red-800">Emergency Email:</p>
-              <p className="text-red-700">uemanilausc.official@gmail.com</p>
             </div>
           </div>
         </div>

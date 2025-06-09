@@ -118,8 +118,8 @@ export default function HomePage() {
       <section className="section-padding bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">UE Canvas & Student Portal</h2>
-            <p className="text-xl text-gray-600">Access your academic resources and manage your student account</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">UE Website, Canvas & Student Portal</h2>
+            <p className="text-xl text-gray-600">Access your academic resources, manage your student account and Enrollment</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -138,6 +138,24 @@ export default function HomePage() {
               <p className="text-gray-600 mb-4">Manage your student account and services</p>
               <span className="text-red-600 font-semibold inline-flex items-center">
                 Visit Portal <ChevronRight className="ml-1 h-4 w-4" />
+              </span>
+            </Link>
+
+            <Link href="https://www.ue.edu.ph/mla/" className="card p-8 text-center hover:scale-105 transition-transform">
+              <Users className="h-16 w-16 text-red-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">UE Website</h3>
+              <p className="text-gray-600 mb-4">Access the official University Website</p>
+              <span className="text-red-600 font-semibold inline-flex items-center">
+                Visit Website <ChevronRight className="ml-1 h-4 w-4" />
+              </span>
+            </Link>
+
+            <Link href="https://apps.ue.edu.ph/iEnroll/login.html" className="card p-8 text-center hover:scale-105 transition-transform">
+              <Users className="h-16 w-16 text-red-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">UE iEnroll</h3>
+              <p className="text-gray-600 mb-4">Enroll faster with iEnroll</p>
+              <span className="text-red-600 font-semibold inline-flex items-center">
+                Visit iEnroll <ChevronRight className="ml-1 h-4 w-4" />
               </span>
             </Link>
           </div>

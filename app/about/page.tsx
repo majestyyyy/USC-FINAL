@@ -188,7 +188,7 @@ export default function AboutPage() {
 			</nav>
 
 			{/* Hero Section */}
-			<section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg">
+			<section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
 				<div className="max-w-7xl mx-auto text-center">
 					<h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg tracking-tight">About Us</h1>
 					<p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">

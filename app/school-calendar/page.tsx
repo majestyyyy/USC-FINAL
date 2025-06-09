@@ -1,10 +1,20 @@
 export default function SchoolCalendarPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-red-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20 shadow-lg rounded-b-3xl">
+        <div className="max-w-7xl mx-auto text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
+            School Calendar
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">
+            Stay on-track to the Official UE Manila School Calendar for the Academic Year 2025-2026
+          </p>
+        </div>
+      </section>
+      
       <section className="section-padding bg-white rounded-2xl shadow-xl mt-10 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <h1 className="text-4xl font-extrabold text-red-700 mb-10 text-center tracking-tight drop-shadow">School Calendar</h1>
-
           <div className="space-y-12">
             {/* Schedule of Admission and Registration */}
             <div className="bg-gray-50 rounded-xl p-8 shadow-md border border-gray-200">

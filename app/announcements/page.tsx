@@ -99,7 +99,7 @@ export default function AnnouncementsPage() {
   return (
     <div className="min-h-screen bg-gray-50 ">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg">
+      <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Announcements</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">

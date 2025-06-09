@@ -7,16 +7,13 @@ export default function ConcernsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-white">
       {/* Hero Section */}
-      <section className="relative gradient-red text-white section-padding overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <img src="/images/ue-red-warrior.jpeg" alt="UE Red Warrior" className="w-full h-full object-cover" />
-        </div>
+      <section className="relative gradient-red text-white section-padding overflow-hidden rounded-b-3xl">
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <MessageSquare className="h-10 w-10" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">Submit a Concern</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">Submit a Concern</h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Your voice matters. Share your concerns and suggestions with us.
           </p>
         </div>
@@ -26,7 +23,7 @@ export default function ConcernsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Google Form Iframe */}
           <div className="lg:col-span-3">
-            <div className="card p-8 animate-fade-in-up">
+            <div className="card p-8">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center">
                   <img src="/images/usc-logo.png" alt="USC Logo" className="w-16 h-16 object-contain mr-4" />
@@ -44,7 +41,7 @@ export default function ConcernsPage() {
           {/* Sidebar */}
           <div className="space-y-8">
             {/* Privacy Notice */}
-            <div className="card p-6 animate-slide-in-right">
+            <div className="card p-6">
               <div className="flex items-center mb-4">
                 <Shield className="h-6 w-6 text-red-600 mr-3" />
                 <h3 className="text-lg font-bold text-gray-900">Privacy & Security</h3>
@@ -61,7 +58,7 @@ export default function ConcernsPage() {
             </div>
 
             {/* Response Time */}
-            <div className="card p-6 animate-slide-in-right">
+            <div className="card p-6">
               <div className="flex items-center mb-4">
                 <Clock className="h-6 w-6 text-red-600 mr-3" />
                 <h3 className="text-lg font-bold text-gray-900">Response Time</h3>
@@ -83,7 +80,7 @@ export default function ConcernsPage() {
             </div>
 
             {/* Contact Info */}
-            <div className="card p-6 animate-slide-in-right">
+            <div className="card p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Need Immediate Help?</h3>
               <div className="space-y-4 text-sm text-gray-600">
                 <div className="p-3 bg-red-50 rounded-lg">
@@ -100,7 +97,7 @@ export default function ConcernsPage() {
             </div>
 
             {/* Form Features */}
-            <div className="card p-6 animate-slide-in-right">
+            <div className="card p-6 ">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Form Features</h3>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
@@ -127,7 +124,7 @@ export default function ConcernsPage() {
             </div>
 
             {/* Alternative Contact Methods */}
-            <div className="card p-6 animate-slide-in-right">
+            <div className="card p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Other Ways to Reach Us</h3>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="p-3 bg-blue-50 rounded-lg">
