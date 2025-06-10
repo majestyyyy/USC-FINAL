@@ -22,6 +22,7 @@ const aboutNav = [
 export default function AboutPage() {
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-red-50 to-white text-gray-800">
+			
 			{/* About Navigation */}
 			<nav className="sticky top-0 z-10 bg-white/90 border-b border-gray-100 mb-8 shadow backdrop-blur-lg">
 				<div className="max-w-7xl mx-auto px-4 flex gap-4 py-3 justify-center">
@@ -85,7 +86,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* USC Officers */}
-			<section id="officers" className="section-padding">
+			<section id="officers" className="section-padding color">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">USC Officers 2025-2026</h2>

@@ -84,57 +84,11 @@ export default function ConcernsPage() {
                   <p className="font-semibold text-red-700 mb-2">USC Office:</p>
                   <p>SFC Building</p>
                   <p>📞 (02) 8123-4567</p>
-                  <p>📧 uemanilausc.official@gmail.com</p>
+                  <p>uemanilausc.official@gmail.com</p>
                 </div>
                 <div className="p-3 bg-gray-50 rounded-lg">
                   <p className="font-semibold text-gray-700 mb-1">Office Hours:</p>
                   <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Form Features */}
-            <div className="card p-6 ">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Form Features</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span>File attachments supported</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span>Anonymous submissions allowed</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span>Automatic email confirmations</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span>Mobile-friendly interface</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span>Secure data handling</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Alternative Contact Methods */}
-            <div className="card p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Other Ways to Reach Us</h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="p-3 bg-blue-50 rounded-lg">
-                  <p className="font-semibold text-blue-700 mb-1">💬 Social Media:</p>
-                  <p>Message us on Facebook or Instagram</p>
-                </div>
-                <div className="p-3 bg-green-50 rounded-lg">
-                  <p className="font-semibold text-green-700 mb-1">📧 Direct Email:</p>
-                  <p>Send detailed concerns to uemanilausc.official@gmail.com</p>
-                </div>
-                <div className="p-3 bg-purple-50 rounded-lg">
-                  <p className="font-semibold text-purple-700 mb-1">🏢 Walk-in:</p>
-                  <p>Visit our office for face-to-face assistance</p>
                 </div>
               </div>
             </div>
