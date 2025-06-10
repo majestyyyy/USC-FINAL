@@ -27,14 +27,14 @@ export default function Navbar() {
               About
             </Link>
 
-            <div className="relative group">
-              <button className="flex items-center text-gray-700 font-medium hover:text-red-600 transition-colors focus:outline-none">
-                Announcements
+            <div className="relative group flex items-center">
+              <span className="flex items-center text-gray-700 font-medium hover:text-red-600 transition-colors cursor-pointer select-none">
+                Notice
                 <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute left-0 mt-2 w-44 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity duration-200 z-50">
-                <Link href="/announcements" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-lg">All Announcements</Link>
-                <Link href="/calendar" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Events</Link>
+              </span>
+              <div className="absolute left-0 top-full mt-0 w-44 bg-white border border-gray-100 rounded-b-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity duration-200 z-50">
+                <Link href="/announcements" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-lg">Announcements</Link>
+                <Link href="/calendar" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-b-lg">Events</Link>
               </div>
             </div>
 
