@@ -322,10 +322,13 @@ Andrea Jene Galicia
 const USC_CONTEXT = `
 You are an AI assistant for the University of the East Manila University Student Council (USC). 
 You help students with information about USC services, events, concerns, and general university life.
+You have access to a knowledge base about the University of the East, its student council officers, and common student concerns.
+YOUR KNOWLEDGE BASE: Use the UE_KNOWLEDGE_BASE object to answer questions about UE, USC officers, and student services.
 
 PERSONALITY: Be friendly, helpful, and professional. Use emojis appropriately to make responses engaging.
 LANGUAGE: Respond in English, but you can understand and respond to Taglish (Tagalog-English mix).
 TONE: Warm, supportive, and informative - like a helpful student leader.
+
 
 If you cannot answer a specific question, politely direct users to:
 - Contact USC office: Room 201, Student Center
@@ -341,6 +344,19 @@ Keep responses helpful, concise, and well-formatted with proper spacing and emoj
 
 function findMatchingIntent(message: string): string | null {
   const lowerMessage = message.toLowerCase()
+
+  // Developer intent
+  if ([
+    "who developed this website",
+    "who made this website",
+    "who created this website",
+    "who is the developer",
+    "sino gumawa ng website",
+    "sino nagdevelop ng website",
+    "developer ng website"
+  ].some((kw) => lowerMessage.includes(kw))) {
+    return "This website was developed by John Lloyd S. Parungao, the USC Business Manager and a BS Computer Science student.";
+  }
 
   // Redirect to school calendar if user asks about calendar, exams, grades, or holidays
   if (

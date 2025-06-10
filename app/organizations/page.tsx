@@ -209,15 +209,15 @@ const orgNav = [
 
 export default function OrganizationsPage() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-red-50 to-white text-gray-800 scroll-smooth">
+        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white text-gray-800 scroll-smooth">
             {/* Navigation */}
-            <nav className="sticky top-0 z-10 bg-white/90 border-b border-gray-100 mb-8 shadow backdrop-blur-lg">
-                <div className="max-w-7xl mx-auto px-4 flex gap-4 py-3 justify-center">
+            <nav className="sticky top-0 z-20 bg-white/90 border-b border-gray-100 mb-8 shadow backdrop-blur-lg">
+                <div className="max-w-5xl mx-auto flex flex-wrap gap-2 px-4 py-3 justify-center">
                     {orgNav.map((item) => (
                         <a
                             key={item.href}
                             href={item.href}
-                            className="text-gray-700 hover:text-red-700 font-semibold px-4 py-2 rounded-full transition-colors duration-200 bg-gray-50 hover:bg-red-50 shadow-sm"
+                            className="text-gray-700 hover:text-blue-700 font-semibold px-4 py-2 rounded-full transition-colors duration-200 bg-gray-100 hover:bg-blue-50 shadow-sm"
                         >
                             {item.label}
                         </a>
@@ -226,14 +226,13 @@ export default function OrganizationsPage() {
             </nav>
 
             {/* Header */}
-            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl mb-12">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg tracking-tight">
                         Recognized Student Organizations
                     </h1>
                     <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium opacity-90">
-                        UE Manila is home to a vibrant community of recognized student
-                        organizations that foster leadership, talent, and service.
+                        UE Manila is home to a vibrant community of recognized student organizations that foster leadership, talent, and service.
                     </p>
                 </div>
             </section>
@@ -244,11 +243,9 @@ export default function OrganizationsPage() {
                     <section
                         key={group.id}
                         id={group.id}
-                        className={`py-12 px-6 rounded-3xl shadow-md ${
-                            index % 2 === 0 ? "bg-white" : "bg-red-50"
-                        }`}
+                        className={`py-12 px-6 rounded-3xl shadow-md ${index % 2 === 0 ? "bg-white" : "bg-red-50"}`}
                     >
-                        <h2 className="text-3xl font-extrabold text-white-700 mb-8 text-center drop-shadow-md tracking-tight">
+                        <h2 className="text-3xl font-extrabold text-gray-700 mb-8 text-center drop-shadow-md tracking-tight">
                             {group.college}
                         </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -263,10 +260,10 @@ export default function OrganizationsPage() {
                                             alt={org.name}
                                             width={112}
                                             height={112}
-                                            className="object-contain"
+                                            className="object-contain rounded-full bg-gray-100"
                                         />
                                     </div>
-                                    <h3 className="text-xl font-semibold mb-2 text-gray-700 text-center">
+                                    <h3 className="text-xl font-semibold mb-2 text-gray-800 text-center">
                                         {org.name}
                                     </h3>
                                     <p className="text-gray-600 text-center text-sm">

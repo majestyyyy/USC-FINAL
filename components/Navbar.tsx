@@ -27,20 +27,25 @@ export default function Navbar() {
               About
             </Link>
 
-            <Link href="/calendar" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
-              Events
-            </Link>
-            <Link href="/announcements" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
-              Announcements
-            </Link>
-            <Link href="/organizations" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
-              RSOs
+            <div className="relative group">
+              <button className="flex items-center text-gray-700 font-medium hover:text-red-600 transition-colors focus:outline-none">
+                Announcements
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              <div className="absolute left-0 mt-2 w-44 bg-white border border-gray-100 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity duration-200 z-50">
+                <Link href="/announcements" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-lg">All Announcements</Link>
+                <Link href="/calendar" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Events</Link>
+              </div>
+            </div>
+
+            <Link href="/concerns" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
+              Concern
             </Link>
             <Link href="/school-calendar" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
               Calendar
             </Link>
-            <Link href="/concerns" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
-              Concern
+            <Link href="/organizations" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
+              RSOs
             </Link>
             <Link href="/partners" className="text-gray-700 font-medium hover:text-red-600 transition-colors">
               Partners
@@ -62,30 +67,14 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Home
-              </Link>
-              <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                About
-              </Link>
-              <Link href="/calendar" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Events
-              </Link>
-              <Link href="/announcements" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Announcements
-              </Link>
-              <Link href="/concerns" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Concern
-              </Link>
-              <Link href="/faqs" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                FAQs
-              </Link>
-              <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Contact
-              </Link>
-              <Link href="/school-calendar" className="block px-3 py-2 text-gray-700 hover:text-red-600">
-                Calendar
-              </Link>
+              <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-red-600">About</Link>
+              <Link href="/announcements" className="block px-3 py-2 text-gray-700 hover:text-red-600">Announcements</Link>
+              <Link href="/calendar" className="block px-3 py-2 text-gray-700 hover:text-red-600">Events</Link>
+              <Link href="/concerns" className="block px-3 py-2 text-gray-700 hover:text-red-600">Concern</Link>
+              <Link href="/school-calendar" className="block px-3 py-2 text-gray-700 hover:text-red-600">Calendar</Link>
+              <Link href="/organizations" className="block px-3 py-2 text-gray-700 hover:text-red-600">RSOs</Link>
+              <Link href="/partners" className="block px-3 py-2 text-gray-700 hover:text-red-600">Partners</Link>
+              <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-red-600">Contact</Link>
             </div>
           </div>
         )}

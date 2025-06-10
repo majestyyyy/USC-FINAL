@@ -35,9 +35,9 @@ const officers = [
 	},
 	{
 		name: "John Lloyd S. Parungao",
-		position: "Business Manager",
+		position: "Business Manager / Full Stack Developer",
 		image: "/images/officers/usc-business-manager.jpg",
-		bio: "Managing business operations, partnerships, and revenue-generating activities for USC.",
+		bio: "Managing business operations, partnerships, and revenue-generating activities for USC. Lead developer and maintainer of the USC Website.",
 	},
 	{
 		name: "Mawen Anthony Iringan",
