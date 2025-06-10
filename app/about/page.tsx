@@ -148,7 +148,7 @@ const collegeCouncils = [
 		name: "College of Dentistry",
 		slug: "cdent",
 		color: "violet",
-		logo: "/images/college-logo/cdent.png",
+		logo: "/images/logo/cdent.png",
 	},
 ]
 

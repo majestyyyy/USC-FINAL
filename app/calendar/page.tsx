@@ -1,17 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, CalendarIcon, MapPin, Clock, Users, X } from "lucide-react"
 
 const events = [
   {
     id: 1,
-    title: "Student Council Elections",
-    date: "2025-01-15",
+    title: "Freshmen Orientation and Freshmen Walk",
+    date: "2025-06-15",
     time: "9:00 AM - 5:00 PM",
-    location: "Main Auditorium",
-    category: "Elections",
-    description: "Annual student council elections for the academic year 2025-2026.",
+    location: "UE Theater then SFC Quadrangle",
+    category: "Event",
+    description: "An orientation event for incoming freshmen to introduce them to university life and resources.",
     attendees: 500,
   },
   {
@@ -80,6 +80,24 @@ export default function CalendarPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(null)
   const [currentDate, setCurrentDate] = useState(new Date())
+  const [showUpcoming, setShowUpcoming] = useState(true)
+
+  // Find the most near event (future event with the closest date)
+  const today = new Date()
+  const upcomingEvent = events
+    .filter((e) => new Date(e.date) >= today)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())[0]
+
+  useEffect(() => {
+    if (showUpcoming && upcomingEvent) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [showUpcoming, upcomingEvent])
 
   const filteredEvents =
     selectedCategory === "All" ? events : events.filter((event) => event.category === selectedCategory)
@@ -159,6 +177,64 @@ export default function CalendarPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Floating Upcoming Event Modal */}
+      {upcomingEvent && showUpcoming && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+          <div className="bg-gradient-to-br from-red-50 to-white rounded-3xl shadow-2xl max-w-xl w-full p-0 relative animate-fade-in-up border-2 border-red-200">
+            <div className="flex items-center justify-between px-6 pt-6 pb-2 border-b border-blue-100 rounded-t-3xl">
+              <div className="flex items-center gap-2">
+                <span className="text-3xl">📅</span>
+                <span className="text-lg font-bold text-red-700 tracking-wide">
+                  Upcoming Event
+                </span>
+              </div>
+              <button
+                className="text-gray-400 hover:text-red-600 transition-colors"
+                onClick={() => setShowUpcoming(false)}
+                aria-label="Close upcoming event"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="px-6 py-6">
+              <div className="mb-3 flex gap-2 items-center">
+                <span
+                  className={`text-xs font-semibold px-2.5 py-0.5 rounded-full shadow-sm ${categoryColors[upcomingEvent.category as keyof typeof categoryColors]}`}
+                >
+                  {upcomingEvent.category}
+                </span>
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">{upcomingEvent.title}</h2>
+              <p className="text-gray-700 mb-4 text-base leading-relaxed">{upcomingEvent.description}</p>
+              <div className="flex items-center text-xs text-gray-500 mb-1 gap-4">
+                <div className="flex items-center">
+                  <CalendarIcon className="h-4 w-4 mr-1" />
+                  {new Date(upcomingEvent.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </div>
+                <div className="flex items-center">
+                  <Clock className="h-4 w-4 mr-1" />
+                  {upcomingEvent.time}
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  {upcomingEvent.location}
+                </div>
+              </div>
+              <button
+                className="mt-6 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-xl shadow transition text-lg tracking-wide"
+                onClick={() => setShowUpcoming(false)}
+              >
+                Continue to Calendar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
         <div className="max-w-7xl mx-auto text-center">
