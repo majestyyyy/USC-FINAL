@@ -35,7 +35,7 @@ export default function PartnersPage() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-red-700">
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">
                 {partner.name}
               </h3>
               <p className="text-gray-600 text-center text-sm">
