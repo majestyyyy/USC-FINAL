@@ -1,56 +1,6 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-
-const collegeCouncils = [
-  {
-    name: "College of Arts and Sciences",
-    shortName: "CAS",
-    slug: "cas",
-    color: "blue",
-    description:
-      "Representing students across various disciplines including Psychology, Political Science, Biology, Communication, English, and History programs.",
-  },
-  {
-    name: "College of Business Administration",
-    shortName: "CBA",
-    slug: "cba",
-    color: "green",
-    description:
-      "Representing students from Business Administration, Accountancy, Management Accounting, and Entrepreneurship programs.",
-  },
-  {
-    name: "College of Education",
-    shortName: "CEduc",
-    slug: "ceduc",
-    color: "yellow",
-    description:
-      "Representing students from Education, Nutrition, Sports Science, Early Childhood Education, and Special Education programs.",
-  },
-  {
-    name: "College of Engineering",
-    shortName: "CEng'g",
-    slug: "ceng",
-    color: "purple",
-    description:
-      "Representing students from Civil Engineering, Electrical Engineering, Mechanical Engineering, and Computer Engineering programs.",
-  },
-  {
-    name: "College of Computer Studies and Systems",
-    shortName: "CCSS",
-    slug: "ccss",
-    color: "indigo",
-    description:
-      "Representing students from Information Technology, Computer Science, Multimedia Arts, and Data Science programs.",
-  },
-  {
-    name: "College of Dentistry",
-    shortName: "CDent",
-    slug: "cdent",
-    color: "pink",
-    description:
-      "Representing students from the Doctor of Dental Medicine program, supporting their unique needs throughout their six-year curriculum.",
-  },
-]
+import {collegeCouncils} from "@/lib/uscData"
 
 export default function CollegeCouncilsPage() {
   return (

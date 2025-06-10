@@ -2,69 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, CalendarIcon, MapPin, Clock, Users, X } from "lucide-react"
+import {events,} from "@/lib/uscData"
 
-const events = [
-  {
-    id: 1,
-    title: "Freshmen Orientation and Freshmen Walk",
-    date: "2025-06-15",
-    time: "9:00 AM - 5:00 PM",
-    location: "UE Theater then SFC Quadrangle",
-    category: "Event",
-    description: "An orientation event for incoming freshmen to introduce them to university life and resources.",
-    attendees: 500,
-  },
-  {
-    id: 2,
-    title: "Mental Health Awareness Seminar",
-    date: "2025-01-20",
-    time: "2:00 PM - 4:00 PM",
-    location: "Conference Hall A",
-    category: "Academic",
-    description: "A seminar focusing on mental health awareness and support systems.",
-    attendees: 150,
-  },
-  {
-    id: 3,
-    title: "Cultural Night 2025",
-    date: "2025-01-25",
-    time: "6:00 PM - 10:00 PM",
-    location: "University Gymnasium",
-    category: "Cultural",
-    description: "Annual cultural celebration showcasing student talents and diversity.",
-    attendees: 800,
-  },
-  {
-    id: 4,
-    title: "Career Fair",
-    date: "2025-02-01",
-    time: "10:00 AM - 4:00 PM",
-    location: "Student Center",
-    category: "Academic",
-    description: "Meet with potential employers and explore career opportunities.",
-    attendees: 300,
-  },
-  {
-    id: 5,
-    title: "Intramural Sports Week",
-    date: "2025-02-10",
-    time: "8:00 AM - 6:00 PM",
-    location: "Sports Complex",
-    category: "Sports",
-    description: "Week-long sports competition between different colleges.",
-    attendees: 1000,
-  },
-  {
-    id: 6,
-    title: "Community Outreach Program",
-    date: "2025-02-15",
-    time: "7:00 AM - 5:00 PM",
-    location: "Local Community",
-    category: "Outreach",
-    description: "Volunteer work and community service activities.",
-    attendees: 100,
-  },
-]
 
 const categories = ["All", "Academic", "Sports", "Cultural", "Elections", "Outreach"]
 

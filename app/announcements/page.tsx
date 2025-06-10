@@ -2,68 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Search, Filter, Calendar, Tag, ChevronRight, X } from "lucide-react"
-
-const announcements = [
-	{
-		id: 1,
-		title: "Enrollment Period for A.Y. '25 - '26",
-		content: "Enrollment period will start on June 16 to July 7, 2025. Please ensure all documents are prepared and submitted on time to avoid delays. For more information, visit the Enrollment section on the USC website.",
-		date: "2025-06-10",
-		category: "Enrollment",
-		priority: "high",
-		author: "USC",
-	},
-	{
-		id: 2,
-		title: "Mental Health Awareness Week - January 20-26, 2025",
-		content:
-			"Join us for Mental Health Awareness Week featuring seminars, workshops, and support group sessions. Professional counselors and mental health advocates will be present to provide guidance and support to our student community.",
-		date: "2025-01-03",
-		category: "Events",
-		priority: "medium",
-		author: "USC Student Welfare Committee",
-	},
-	{
-		id: 3,
-		title: "New Student Services Portal Launch",
-		content:
-			"We're excited to announce the launch of our new Student Services Portal. This platform will allow students to submit concerns, track requests, and access various USC services online. The portal will be available starting January 8, 2025.",
-		date: "2025-01-02",
-		category: "Services",
-		priority: "medium",
-		author: "USC Technology Committee",
-	},
-	{
-		id: 4,
-		title: "Emergency Alert: Campus Maintenance Schedule",
-		content:
-			"Please be advised that scheduled maintenance will be conducted in the Main Building on January 12, 2025, from 6:00 AM to 12:00 PM. Some areas may be temporarily inaccessible. Alternative routes and temporary facilities will be provided.",
-		date: "2025-01-01",
-		category: "Emergency Alerts",
-		priority: "high",
-		author: "USC Administration",
-	},
-	{
-		id: 5,
-		title: "Cultural Night 2025 - Call for Performers",
-		content:
-			"Calling all talented students! Registration for Cultural Night 2025 performers is now open. Showcase your talents in music, dance, theater, or any cultural performance. Registration deadline is January 18, 2025.",
-		date: "2024-12-28",
-		category: "Events",
-		priority: "low",
-		author: "USC Cultural Committee",
-	},
-	{
-		id: 6,
-		title: "Academic Excellence Awards Nomination",
-		content:
-			"Nominations for the Academic Excellence Awards are now being accepted. Faculty and students can nominate outstanding individuals who have demonstrated exceptional academic performance and leadership. Deadline for nominations is February 1, 2025.",
-		date: "2024-12-25",
-		category: "Academic",
-		priority: "medium",
-		author: "USC Academic Affairs Committee",
-	},
-]
+import {announcements,} from "@/lib/uscData"
 
 const categories = [
 	"All",
