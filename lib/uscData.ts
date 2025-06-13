@@ -905,38 +905,55 @@ export const orgs = [
     orgs: [
       {
         name: "UE Lex Societas Orientis",
-        logo: "/images/orgs/debate-society.png",
+        logo: "/images/RSO_LOGO/lexso.png",
         description:
                     "Promoting critical thinking and public speaking through debate tournaments and workshops.",
-        social: "https://facebook.com/ueartsociety"
+        social: "https://www.facebook.com/uelexso"
       },
       {
         name: "Psychology Society",
-        logo: "/images/orgs/psychology-students-society.png",
+        logo: "/images/RSO_LOGO/psychology.png",
         description:
                     "Fostering interest in psychology through seminars, research projects, and community outreach.",
-        social: "https://facebook.com/ueartsociety"
+        social: "https://www.facebook.com/UEPsychologySociety"
       },
       {
         name: "UE SIHM: Society of International Hospitality Management",
-        logo: "/images/orgs/political-science-society.png",
+        logo: "/images/RSO_LOGO/SIHM.png",
         description:
                     "Encouraging political awareness and civic engagement through discussions, debates, and community service.",
-        social: "https://facebook.com/ueartsociety"
+        social: "https://www.facebook.com/OfficialUESIHM"
       },
       {
         name: "UE Political Science Society",
-        logo: "/images/orgs/biology-society.png",
+        logo: "/images/RSO_LOGO/pss.png",
         description:
                     "Promoting interest in biological sciences through research projects, seminars, and community outreach.",
-        social: "https://facebook.com/ueartsociety"
+        social: "https://www.facebook.com/UEPSS"
       },
       {
-        name: "University of the East Psychology Society ",
-        logo: "/images/orgs/biology-society.png",
-        description:
-                    "Promoting interest in biological sciences through research projects, seminars, and community outreach.",
-        social: "https://facebook.com/ueartsociety"
+        name: "The Pre-Medical Civic Society",
+        logo: "/images/RSO_LOGO/premed.png",
+        description: "Supporting pre-medical students with academic, civic, and outreach programs.",
+        social: "https://www.facebook.com/UEPMCS"
+      },
+      {
+        name: "University of the East - Association of Broadcasting Students",
+        logo: "/images/RSO_LOGO/broad.png",
+        description: "Empowering broadcasting students through media projects, workshops, and industry exposure.",
+        social: "https://facebook.com/uebroadcasting"
+      },
+      {
+        name: "UE Journalism Society",
+        logo: "/images/RSO_LOGO/journal.png",
+        description: "Developing journalistic skills and ethics through campus publications and media activities.",
+        social: "https://www.facebook.com/uejournalismsociety"
+      },
+      {
+        name: "UE International Studies Society",
+        logo: "/images/RSO_LOGO/isso.png",
+        description: "Fostering global awareness and cultural exchange among International Studies students.",
+        social: "https://www.facebook.com/ueisso"
       },
     ],
   },
@@ -1014,25 +1031,28 @@ export const orgs = [
     college: "College of Education",
     orgs: [
       {
-        name: "Akademya",
-        logo: "/images/orgs/akademya.png",
-        description:
-                    "Empowering future educators through workshops, seminars, and community outreach.",
-        social: "https://facebook.com/ueartsociety"
+        name: "Human Kinetics Organization",
+        logo: "/images/orgs/human-kinetics.png",
+        description: "Promoting physical education, sports, and wellness among students through activities and outreach.",
+        social: "https://facebook.com/uehumankinetics"
       },
       {
-        name: "Future Educators Society",
-        logo: "/images/orgs/future-educators-society.png",
-        description:
-                    "Fostering collaboration and support among future educators through mentorship and professional development.",
-        social: "https://facebook.com/ueartsociety"
+        name: "Akademia Organization",
+        logo: "/images/orgs/akademia-org.png",
+        description: "Fostering academic excellence and leadership among education students.",
+        social: "https://facebook.com/ueakademiaorg"
       },
       {
-        name: "UE Sports Science Society",
-        logo: "/images/orgs/ue-sports-science-society.png",
-        description:
-                    "Promoting sports science education and research through workshops, seminars, and community outreach.",
-        social: "https://facebook.com/ueartsociety"
+        name: "Philippine Association of Nutrition - Sigma Chi Chapter",
+        logo: "/images/orgs/pan-sigma-chi.png",
+        description: "Promoting nutrition education and awareness through seminars, outreach, and research.",
+        social: "https://facebook.com/uepansigmachi"
+      },
+      {
+        name: "Student Teachers Organization",
+        logo: "/images/orgs/student-teachers-org.png",
+        description: "Supporting student teachers with resources, training, and professional development.",
+        social: "https://facebook.com/uestudentteachers"
       },
     ],
   },
@@ -1041,25 +1061,28 @@ export const orgs = [
     college: "College of Engineering",
     orgs: [
       {
-        name: "Civil Engineering Society",
-        logo: "/images/orgs/civil-engineering-society.png",
-        description:
-                    "Empowering future civil engineers through workshops, seminars, and community service.",
-        social: "https://facebook.com/uecodewarriors"
+        name: "Association of Civil Engineering Students",
+        logo: "/images/orgs/association-civil-engineering.png",
+        description: "Uniting civil engineering students for academic and professional growth through seminars, competitions, and outreach.",
+        social: "https://facebook.com/ueaces"
       },
       {
-        name: "Electrical Engineering Society",
-        logo: "/images/orgs/electrical-engineering-society.png",
-        description:
-                    "Fostering innovation and excellence in electrical engineering through academic and professional development.",
-        social: "https://facebook.com/uecodewarriors"
+        name: "Society of Computer Engineering Students",
+        logo: "/images/orgs/society-computer-engineering.png",
+        description: "Fostering innovation and excellence among computer engineering students through projects, workshops, and events.",
+        social: "https://facebook.com/uescpe"
       },
       {
-        name: "Mechanical Engineering Society",
-        logo: "/images/orgs/mechanical-engineering-society.png",
-        description:
-                    "Empowering future mechanical engineers through workshops, seminars, and community service.",
-        social: "https://facebook.com/uecodewarriors"
+        name: "League of Electrical Engineering Students",
+        logo: "/images/orgs/league-electrical-engineering.png",
+        description: "Promoting camaraderie and technical excellence among electrical engineering students.",
+        social: "https://facebook.com/uelees"
+      },
+      {
+        name: "Philippine Society of Mechanical Engineers - UE Manila Student Unit",
+        logo: "/images/orgs/psme.png",
+        description: "Supporting mechanical engineering students through professional development and industry exposure.",
+        social: "https://facebook.com/uepsme"
       },
     ],
   },
@@ -1068,25 +1091,40 @@ export const orgs = [
     college: "College of Dentistry",
     orgs: [
       {
-        name: "UE Dental Society",
-        logo: "/images/orgs/ue-dental-society.png",
-        description:
-                    "Supporting dental students through academic support, community service, and professional development.",
-        social: "https://facebook.com/ueartsociety"
+        name: "Achievers' Council for Excellence",
+        logo: "/images/orgs/ace.png",
+        description: "Promoting academic excellence and leadership among Dentistry students.",
+        social: "https://facebook.com/ueace"
       },
       {
-        name: "Dental Students Association",
-        logo: "/images/orgs/dental-students-association.png",
-        description:
-                    "Fostering collaboration and support among dental students through mentorship and professional development.",
-        social: "https://facebook.com/ueartsociety"
+        name: "Rotaract Club of the University of the East College of Dentistry",
+        logo: "/images/orgs/rotaract.png",
+        description: "Engaging dental students in community service and professional development.",
+        social: "https://facebook.com/uerotaractdentistry"
       },
       {
-        name: "Dental Hygiene Society",
-        logo: "/images/orgs/dental-hygiene-society.png",
-        description:
-                    "Promoting oral health awareness and hygiene practices through community outreach and education.",
-        social: "https://facebook.com/ueartsociety"
+        name: "University of the East Filipino-Chinese Dental Students' Association",
+        logo: "/images/orgs/fil-chi-dental.png",
+        description: "Fostering camaraderie and cultural exchange among Filipino-Chinese dental students.",
+        social: "https://facebook.com/uefilchidssa"
+      },
+      {
+        name: "Omega Delta Rho - Omega Delta Phi",
+        logo: "/images/orgs/omega-delta.png",
+        description: "Promoting brotherhood, leadership, and service among Dentistry students.",
+        social: "https://facebook.com/ueomegadeltarho"
+      },
+      {
+        name: "Philippine Dental Students Association University of the East Chapter",
+        logo: "/images/orgs/pdsa.png",
+        description: "Representing UE dental students in the national dental student community.",
+        social: "https://facebook.com/uepdsa"
+      },
+      {
+        name: "University of the East Dental Health Team",
+        logo: "/images/orgs/dental-health-team.png",
+        description: "Promoting oral health awareness and outreach in the community.",
+        social: "https://facebook.com/uedentalhealthteam"
       },
     ],
   },
@@ -1103,7 +1141,7 @@ export const orgs = [
             },
             {
                 name: "UE Chorale",
-                logo: "/images/orgs/chorale.png",
+                logo: "/images/RSO_LOGO/chorale.png",
                 description:
                     "Showcasing student talent in music and representing UE in local and international competitions.",
                 social: "https://www.facebook.com/uechoraleofficial"
@@ -1117,38 +1155,72 @@ export const orgs = [
             },
             {
                 name: "Peer Facilitators",
-                logo: "/images/orgs/peer-facilitators.png",
+                logo: "/images/RSO_LOGO/peer.png",
                 description:
                     "Promoting peer support and mental health awareness among students.",
-                social: "https://facebook.com/ueartsociety"
+                social: "https://www.facebook.com/uemnlpeer"
             },
             {
-                name: "UE Dance Troupe",
-                logo: "/images/orgs/dance-troupe.png",
+                name: "UE Silanganan Dance Troupe",
+                logo: "/images/RSO_LOGO/dance.png",
                 description:
                     "Showcasing student talent in dance and representing UE in local and international competitions.",
-                social: "https://facebook.com/ueartsociety"
+                social: "https://www.facebook.com/UESilangananDanceTroupe"
             },
             {
                 name: "Debate and Speech Society",
-                logo: "/images/orgs/debate-society.png",
+                logo: "/images/RSO_LOGO/debate.png",
                 description:
                     "Promoting critical thinking and public speaking through debate tournaments and workshops.",
-                social: "https://facebook.com/ueartsociety"
+                social: "https://www.facebook.com/uedebssoc"
             },
             {
-                name: "Lakas",
-                logo: "/images/orgs/lakas.png",
-                description:
-                    "Promoting critical thinking and public speaking through debate tournaments and workshops.",
-                social: "https://facebook.com/ueartsociety"
+                name: "UE Jam Sessions",
+                logo: "/images/orgs/jam-sessions.png",
+                description: "A community for musically inclined students to collaborate, perform, and enjoy music together.",
+                social: "https://facebook.com/uejamsessions"
             },
             {
-                name: "sadasfsa",
-                logo: "/images/orgs/debate-society.png",
-                description:
-                    "Promoting critical thinking and public speaking through debate tournaments and workshops.",
-                social: "https://facebook.com/ueartsociety"
+                name: "UE Alpha Sigma",
+                logo: "/images/orgs/alpha-sigma.png",
+                description: "A fraternity/sorority fostering leadership, service, and academic excellence.",
+                social: "https://facebook.com/uealphasigma"
+            },
+            {
+                name: "UE Manila College Y Club",
+                logo: "/images/orgs/college-y-club.png",
+                description: "Promoting youth leadership and community service through YMCA initiatives.",
+                social: "https://facebook.com/uecollegeyclub"
+            },
+            {
+                name: "UE Alpha Phi Omega - Epsilon",
+                logo: "/images/orgs/apo-epsilon.png",
+                description: "A service fraternity/sorority dedicated to developing leadership, friendship, and service.",
+                social: "https://facebook.com/ueapoepsilon"
+            },
+            {
+                name: "Christian Brotherhood International",
+                logo: "/images/orgs/cbi.png",
+                description: "A faith-based organization promoting Christian values and fellowship among students.",
+                social: "https://facebook.com/uecbi"
+            },
+            {
+                name: "Student Catholic Action/Christian Community Program",
+                logo: "/images/orgs/sca-ccp.png",
+                description: "A Catholic student organization focused on spiritual growth and community service.",
+                social: "https://facebook.com/uescaccp"
+            },
+            {
+                name: "International Student Association",
+                logo: "/images/orgs/international-student-association.png",
+                description: "Supporting and connecting international students at UE Manila.",
+                social: "https://facebook.com/ueisa"
+            },
+            {
+                name: "UE Bright Leaders Association for Zeal and Excellence",
+                logo: "/images/orgs/blaze.png",
+                description: "Empowering student leaders to excel in academics, leadership, and service.",
+                social: "https://facebook.com/ueblaze"
             },
         ],
     },
