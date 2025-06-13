@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 relative">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <img src="/images/usc-logo.png" alt="USC Logo" className="w-12 h-12 object-contain" />
+              <img src="/images/usc.png" alt="USC Logo" className="w-12 h-12 object-contain" />
               <div className="hidden sm:block">
                 <span className="text-xl font-bold text-red-600">USC</span>
               </div>

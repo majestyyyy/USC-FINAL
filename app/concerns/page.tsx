@@ -23,7 +23,7 @@ export default function ConcernsPage() {
             <div className="card p-8">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center">
-                  <img src="/images/usc-logo.png" alt="USC Logo" className="w-16 h-16 object-contain mr-4" />
+                  <img src="/images/usc.png" alt="USC Logo" className="w-16 h-16 object-contain mr-4" />
                   <div>
                     <h2 className="text-3xl font-bold text-gray-900">Share Your Concern</h2>
                     <p className="text-gray-600 mt-1">We're here to listen and help</p>

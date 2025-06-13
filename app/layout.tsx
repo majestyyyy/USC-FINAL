@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/images/usc-logo.png" sizes="256x256 128x128 64x64 32x32 16x16" />
+        <link rel="icon" type="image/png" href="/images/usc.png" sizes="256x256 128x128 64x64 32x32 16x16" />
       </head>
       <body className={inter.className}>
         <Navbar />

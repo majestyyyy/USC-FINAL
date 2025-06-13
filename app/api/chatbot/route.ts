@@ -397,7 +397,7 @@ function findMatchingIntent(message: string): string | null {
               const officerRole = role.replace("pro", "public relations officer")
               const officerRegex = new RegExp(`${officerRole}\n(.*?)\n`, "i")
               const officer = data.response.match(officerRegex)
-              return officer ? `the ${officerRole} is ${officer[1].trim()}` : `Sorry, I couldn't find information for the ${officerRole}.`
+              return officer ? `The ${officerRole} is ${officer[1].trim()}` : `Sorry, I couldn't find information for the ${officerRole}.`
             })
             return `Hello! ${responses.join(" and ")}. 😊`
           }

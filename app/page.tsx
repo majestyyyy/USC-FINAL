@@ -123,7 +123,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Link href="https://ue.instructure.com/login/canvas" className="card p-8 text-center hover:scale-105 transition-transform">
+            <Link target="_blank" href="https://ue.instructure.com/login/canvas" className="card p-8 text-center hover:scale-105 transition-transform">
               <MessageSquare className="h-16 w-16 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">UE Canvas</h3>
               <p className="text-gray-600 mb-4">Access your online learning platform</p>
@@ -132,7 +132,7 @@ export default function HomePage() {
               </span>
             </Link>
 
-            <Link href="https://apps.ue.edu.ph/portals/sp/" className="card p-8 text-center hover:scale-105 transition-transform">
+            <Link target="_blank" href="https://apps.ue.edu.ph/portals/sp/" className="card p-8 text-center hover:scale-105 transition-transform">
               <Users className="h-16 w-16 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">UE Portal</h3>
               <p className="text-gray-600 mb-4">Manage your student account and services</p>
@@ -141,7 +141,7 @@ export default function HomePage() {
               </span>
             </Link>
 
-            <Link href="https://www.ue.edu.ph/mla/" className="card p-8 text-center hover:scale-105 transition-transform">
+            <Link target="_blank" href="https://www.ue.edu.ph/mla/" className="card p-8 text-center hover:scale-105 transition-transform">
               <Users className="h-16 w-16 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">UE Website</h3>
               <p className="text-gray-600 mb-4">Access the official University Website</p>
@@ -150,7 +150,7 @@ export default function HomePage() {
               </span>
             </Link>
 
-            <Link href="https://apps.ue.edu.ph/iEnroll/login.html" className="card p-8 text-center hover:scale-105 transition-transform">
+            <Link target="_blank" href="https://apps.ue.edu.ph/iEnroll/login.html" className="card p-8 text-center hover:scale-105 transition-transform">
               <Users className="h-16 w-16 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">UE iEnroll</h3>
               <p className="text-gray-600 mb-4">Enroll faster with iEnroll</p>

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* USC Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/images/usc-logo.png" alt="USC Logo" className="w-12 h-12 object-contain" />
+              <img src="/images/usc.png" alt="USC Logo" className="w-12 h-12 object-contain" />
               <span className="text-xl font-bold">USC</span>
             </div>
             <p className="text-white-300 mb-4">

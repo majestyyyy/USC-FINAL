@@ -5,11 +5,11 @@ import {orgs} from "@/lib/uscData"
 
 // Navigation Links
 const orgNav = [
+    { label: "CCSS", href: "#ccssOrgs" },
     { label: "CAS", href: "#casOrgs" },
     { label: "CBA", href: "#cbaOrgs" },
-    { label: "CCSS", href: "#ccssOrgs" },
-    { label: "CENG", href: "#cengOrgs" },
     { label: "CEDUC", href: "#ceducOrgs" },
+    { label: "CENG", href: "#cengOrgs" },
     { label: "CDENT", href: "#ccdentOrgs" },
     { label: "UNIVWIDE", href: "#univOrgs" },
 ];
@@ -18,7 +18,7 @@ export default function OrganizationsPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white text-gray-800 scroll-smooth">
             {/* Navigation */}
-            <nav className="sticky top-0 z-20 bg-white/90 border-b border-gray-100 mb-8 shadow backdrop-blur-lg">
+            <nav className="sticky top-20 z-30 bg-white border-b border-gray-100 shadow backdrop-blur-lg">
                 <div className="max-w-5xl mx-auto flex flex-wrap gap-2 px-4 py-3 justify-center">
                     {orgNav.map((item) => (
                         <a
@@ -50,34 +50,44 @@ export default function OrganizationsPage() {
                     <section
                         key={group.id}
                         id={group.id}
-                        className={`py-12 px-6 rounded-3xl shadow-md ${index % 2 === 0 ? "bg-white" : "bg-red-50"}`}
+                        className={`py-12 px-6 rounded-3xl border-2 border-red-100 "bg-white"`}
                     >
                         <h2 className="text-3xl font-extrabold text-gray-700 mb-8 text-center drop-shadow-md tracking-tight">
                             {group.college}
                         </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                            {group.orgs.map((org) => (
-                                <div
-                                    key={org.name}
-                                    className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:shadow-xl transition-all duration-300 border border-gray-100"
-                                >
-                                    <div className="w-28 h-28 mb-4 flex items-center justify-center">
-                                        <Image
-                                            src={org.logo}
-                                            alt={org.name}
-                                            width={112}
-                                            height={112}
-                                            className="object-contain rounded-full bg-gray-100"
-                                        />
-                                    </div>
-                                    <h3 className="text-xl font-semibold mb-2 text-gray-800 text-center">
-                                        {org.name}
-                                    </h3>
-                                    <p className="text-gray-600 text-center text-sm">
-                                        {org.description}
-                                    </p>
-                                </div>
-                            ))}
+                            {group.orgs.map((org) => {
+                                const socialUrl = (org as any).social || (org as any).socialMedia;
+                                // Optionally, assign a color based on group.college or org.college if available
+                                return (
+                                    <a
+                                        key={org.name}
+                                        href={socialUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group relative card p-8 text-center bg-white/60 hover:bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl flex flex-col items-center border-2 border-gray-100 hover:border-red-400 transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 hover:-translate-y-2"
+                                        tabIndex={0}
+                                    >
+                                        <div className="w-24 h-24 mb-6 flex items-center justify-center mx-auto">
+                                            <Image
+                                                src={org.logo}
+                                                alt={org.name}
+                                                width={96}
+                                                height={96}
+                                                className="object-contain"
+                                            />
+                                        </div>
+                                        <h3 className="text-2xl font-bold mb-2 text-gray-900 text-center group-hover:text-red-700 transition-colors">
+                                            {org.name}
+                                        </h3>
+                                        <p className="text-gray-600 text-center text-base mb-6 min-h-[48px]">
+                                            {org.description}
+                                        </p>
+                                        
+                                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-xs bg-black/70 text-white px-3 py-1 rounded-full pointer-events-none">Visit Page</div>
+                                    </a>
+                                );
+                            })}
                         </div>
                     </section>
                 ))}

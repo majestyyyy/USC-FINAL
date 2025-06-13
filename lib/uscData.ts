@@ -595,7 +595,7 @@ export const collegeSC =
     color: "violet",
     description:
       "The College of Dentistry Student Council represents students from the Doctor of Dental Medicine program, supporting their unique needs throughout their six-year curriculum.",
-    logo: "public/images/logo/cdent.png",
+    logo: "/images/logo/cdent.png",
     officers: [
       {
         position: "President",
@@ -870,196 +870,285 @@ export const events = [
     
 ]
 
+// Example orgs data with social links
 export const orgs = [
-    {
-        id: "ccssOrgs",
-        college: "College of Computer Studies and Systems",
-        orgs: [
-            {
-                name: "Computer Students Society",
-                logo: "/images/orgs/computer-students-society.png",
-                description:
+  {
+    id: "ccssOrgs",
+    college: "College of Computer Studies and Systems",
+    orgs: [
+      {
+        name: "Computer Students Society",
+        logo: "/images/RSO_LOGO/comsso.png",
+        description:
                     "Empowering students in the field of computer science through workshops, hackathons, and tech events.",
-            },
-            {
-                name: "UE Robotics Club",
-                logo: "/images/orgs/ue-robotics-club.png",
-                description:
-                    "Fostering innovation and creativity in robotics through competitions, workshops, and community outreach.",
-            },
-            {
-                name: "UE Data Science Society",
-                logo: "/images/orgs/ue-data-science-society.png",
-                description:
-                    "Promoting data science education and research through workshops, seminars, and community outreach.",
-            },
-            {
-                name: "UE Multimedia Arts Society",
-                logo: "/images/orgs/ue-multimedia-arts-society.png",
-                description:
+        social: "https://www.facebook.com/ComssoUe"
+      },
+      {
+        name: "Entertainment, Multimedia Computing Students Society",
+        logo: "/images/RSO_LOGO/emcss.png",
+        description:
+                    "Fostering innovation and creativity in multimedia computing through competitions, workshops, and community outreach.",
+        social: "https://www.facebook.com/EMCStudentsSociety"
+      },
+      {
+        name: "CCSS - Research and Development Society",
+        logo: "/images/RSO_LOGO/rnd.png",
+        description:
                     "Fostering creativity and innovation in multimedia arts through events, workshops, and exhibitions.",
-            },
-        ],
-    },
-    {
-        id: "casOrgs",
-        college: "College of Arts and Sciences",
-        orgs: [
-            {
-                name: "Debate and Speech Society",
-                logo: "/images/orgs/debate-society.png",
-                description:
+        social: "https://www.facebook.com/UECCSSRnDUnit"
+      },
+    ],
+  },
+  {
+    id: "casOrgs",
+    college: "College of Arts and Sciences",
+    orgs: [
+      {
+        name: "UE Lex Societas Orientis",
+        logo: "/images/orgs/debate-society.png",
+        description:
                     "Promoting critical thinking and public speaking through debate tournaments and workshops.",
-            },
-            {
-                name: "Psychology Students Society",
-                logo: "/images/orgs/psychology-students-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "Psychology Society",
+        logo: "/images/orgs/psychology-students-society.png",
+        description:
                     "Fostering interest in psychology through seminars, research projects, and community outreach.",
-            },
-            {
-                name: "Political Science Society",
-                logo: "/images/orgs/political-science-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "UE SIHM: Society of International Hospitality Management",
+        logo: "/images/orgs/political-science-society.png",
+        description:
                     "Encouraging political awareness and civic engagement through discussions, debates, and community service.",
-            },
-            {
-                name: "Biology Society",
-                logo: "/images/orgs/biology-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "UE Political Science Society",
+        logo: "/images/orgs/biology-society.png",
+        description:
                     "Promoting interest in biological sciences through research projects, seminars, and community outreach.",
-            },
-        ],
-    },
-    {
-        id: "cbaOrgs",
-        college: "College of Business Administration",
-        orgs: [
-            {
-                name: "Junior Philippine Institute of Accountants",
-                logo: "public/images/logo/cba.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "University of the East Psychology Society ",
+        logo: "/images/orgs/biology-society.png",
+        description:
+                    "Promoting interest in biological sciences through research projects, seminars, and community outreach.",
+        social: "https://facebook.com/ueartsociety"
+      },
+    ],
+  },
+  {
+    id: "cbaOrgs",
+    college: "College of Business Administration",
+    orgs: [
+      {
+        name: "UE Beta Sigma Omicron",
+        logo: "public/images/logo/cba.png",
+        description:
                     "Empowering future accountants through workshops, seminars, and networking events.",
-            },
-            {
-                name: "UE Business Society",
-                logo: "/images/orgs/ue-business-society.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Junior Philippine Institute of Accountants",
+        logo: "/images/orgs/ue-business-society.png",
+        description:
                     "Fostering collaboration and support among business students through mentorship and professional development.",
-            },
-            {
-                name: "Entrepreneurship Society",
-                logo: "/images/orgs/entrepreneurship-society.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Junior Financial Executives",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
                     "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
-            },
-        ],
-    },
-    {
-        id: "ceducOrgs",
-        college: "College of Education",
-        orgs: [
-            {
-                name: "Akademya",
-                logo: "/images/orgs/akademya.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Junior Marketing Association",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Institute of Management Accountants",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Management Student Society of the Philippines ",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Tau Alpha Sigma",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Top Accounting Students",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Beta Epsilon Sigma - Hiyas ng Silangan",
+        logo: "/images/orgs/entrepreneurship-society.png",
+        description:
+                    "Promoting entrepreneurship education and innovation through workshops, seminars, and community outreach.",
+        social: "https://facebook.com/uecodewarriors"
+      },
+    ],
+  },
+  {
+    id: "ceducOrgs",
+    college: "College of Education",
+    orgs: [
+      {
+        name: "Akademya",
+        logo: "/images/orgs/akademya.png",
+        description:
                     "Empowering future educators through workshops, seminars, and community outreach.",
-            },
-            {
-                name: "Future Educators Society",
-                logo: "/images/orgs/future-educators-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "Future Educators Society",
+        logo: "/images/orgs/future-educators-society.png",
+        description:
                     "Fostering collaboration and support among future educators through mentorship and professional development.",
-            },
-            {
-                name: "UE Sports Science Society",
-                logo: "/images/orgs/ue-sports-science-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "UE Sports Science Society",
+        logo: "/images/orgs/ue-sports-science-society.png",
+        description:
                     "Promoting sports science education and research through workshops, seminars, and community outreach.",
-            },
-        ],
-    },
-    {
-        id: "cengOrgs",
-        college: "College of Engineering",
-        orgs: [
-            {
-                name: "Civil Engineering Society",
-                logo: "/images/orgs/civil-engineering-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+    ],
+  },
+  {
+    id: "cengOrgs",
+    college: "College of Engineering",
+    orgs: [
+      {
+        name: "Civil Engineering Society",
+        logo: "/images/orgs/civil-engineering-society.png",
+        description:
                     "Empowering future civil engineers through workshops, seminars, and community service.",
-            },
-            {
-                name: "Electrical Engineering Society",
-                logo: "/images/orgs/electrical-engineering-society.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Electrical Engineering Society",
+        logo: "/images/orgs/electrical-engineering-society.png",
+        description:
                     "Fostering innovation and excellence in electrical engineering through academic and professional development.",
-            },
-            {
-                name: "Mechanical Engineering Society",
-                logo: "/images/orgs/mechanical-engineering-society.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+      {
+        name: "Mechanical Engineering Society",
+        logo: "/images/orgs/mechanical-engineering-society.png",
+        description:
                     "Empowering future mechanical engineers through workshops, seminars, and community service.",
-            },
-        ],
-    },
-    {
-        id: "ccdentOrgs",
-        college: "College of Dentistry",
-        orgs: [
-            {
-                name: "UE Dental Society",
-                logo: "/images/orgs/ue-dental-society.png",
-                description:
+        social: "https://facebook.com/uecodewarriors"
+      },
+    ],
+  },
+  {
+    id: "ccdentOrgs",
+    college: "College of Dentistry",
+    orgs: [
+      {
+        name: "UE Dental Society",
+        logo: "/images/orgs/ue-dental-society.png",
+        description:
                     "Supporting dental students through academic support, community service, and professional development.",
-            },
-            {
-                name: "Dental Students Association",
-                logo: "/images/orgs/dental-students-association.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "Dental Students Association",
+        logo: "/images/orgs/dental-students-association.png",
+        description:
                     "Fostering collaboration and support among dental students through mentorship and professional development.",
-            },
-            {
-                name: "Dental Hygiene Society",
-                logo: "/images/orgs/dental-hygiene-society.png",
-                description:
+        social: "https://facebook.com/ueartsociety"
+      },
+      {
+        name: "Dental Hygiene Society",
+        logo: "/images/orgs/dental-hygiene-society.png",
+        description:
                     "Promoting oral health awareness and hygiene practices through community outreach and education.",
-            },
-        ],
-    },
+        social: "https://facebook.com/ueartsociety"
+      },
+    ],
+  },
     {
         id: "univOrgs",
         college: "University-Wide Organizations",
         orgs: [
             {
+                name: "UE Zenith Esports",
+                logo: "/images/RSO_LOGO/zenith.png",
+                description:
+                    "Promoting critical thinking and public speaking through debate tournaments and workshops.",
+                social: "https://www.facebook.com/uezenithesports"
+            },
+            {
                 name: "UE Chorale",
                 logo: "/images/orgs/chorale.png",
                 description:
                     "Showcasing student talent in music and representing UE in local and international competitions.",
+                social: "https://www.facebook.com/uechoraleofficial"
             },
             {
                 name: "UE Red Cross Youth",
-                logo: "/images/orgs/red-cross-youth.png",
+                logo: "/images/RSO_LOGO/rcyc.png",
                 description:
                     "Engaging students in humanitarian service and disaster response initiatives.",
+                social: "https://www.facebook.com/UERedCrossWarriors"
             },
             {
                 name: "Peer Facilitators",
                 logo: "/images/orgs/peer-facilitators.png",
                 description:
                     "Promoting peer support and mental health awareness among students.",
+                social: "https://facebook.com/ueartsociety"
             },
             {
                 name: "UE Dance Troupe",
                 logo: "/images/orgs/dance-troupe.png",
                 description:
                     "Showcasing student talent in dance and representing UE in local and international competitions.",
+                social: "https://facebook.com/ueartsociety"
             },
             {
                 name: "Debate and Speech Society",
                 logo: "/images/orgs/debate-society.png",
                 description:
                     "Promoting critical thinking and public speaking through debate tournaments and workshops.",
+                social: "https://facebook.com/ueartsociety"
+            },
+            {
+                name: "Lakas",
+                logo: "/images/orgs/lakas.png",
+                description:
+                    "Promoting critical thinking and public speaking through debate tournaments and workshops.",
+                social: "https://facebook.com/ueartsociety"
+            },
+            {
+                name: "sadasfsa",
+                logo: "/images/orgs/debate-society.png",
+                description:
+                    "Promoting critical thinking and public speaking through debate tournaments and workshops.",
+                social: "https://facebook.com/ueartsociety"
             },
         ],
     },

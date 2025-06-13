@@ -22,9 +22,8 @@ const aboutNav = [
 export default function AboutPage() {
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-red-50 to-white text-gray-800">
-			
 			{/* About Navigation */}
-			<nav className="sticky top-0 z-10 bg-white/90 border-b border-gray-100 mb-8 shadow backdrop-blur-lg">
+			<nav className="sticky top-20 z-30 bg-white border-b border-gray-100 shadow backdrop-blur-lg">
 				<div className="max-w-7xl mx-auto px-4 flex gap-4 py-3 justify-center">
 					{aboutNav.map((item) => (
 						<a
@@ -37,7 +36,6 @@ export default function AboutPage() {
 					))}
 				</div>
 			</nav>
-
 			{/* Hero Section */}
 			<section className="bg-gradient-to-r from-red-600 to-red-800 text-white section-padding shadow-lg rounded-b-3xl">
 				<div className="max-w-7xl mx-auto text-center">
