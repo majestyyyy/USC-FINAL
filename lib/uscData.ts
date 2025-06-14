@@ -136,7 +136,7 @@ export const colleges = [
 		name: "College of Engineering",
 		slug: "ceng",
 		color: "orange",
-		logo: "/images/college-logo/ceng.png",
+		logo: "/images/logo/ceng.png",
 	},
 	{
 		name: "College of Computer Studies and Systems",
@@ -421,7 +421,7 @@ export const collegeSC =
     color: "orange",
     description:
       "The College of Engineering Student Council represents students from Civil Engineering, Electrical Engineering, Mechanical Engineering, and Computer Engineering programs.",
-    logo: "/logos/ceng-logo.png",
+    logo: "/images/logo/ceng.png",
     officers: [
       {
         position: "President",
