@@ -13,10 +13,10 @@ const colorMap: Record<string, { bg: string; text: string }> = {
 
 // Navigation for About Page
 const aboutNav = [
-	{ label: "About USC", href: "#about-usc" },
-	{ label: "USC Officers", href: "#officers" },
-	{ label: "USC Committees", href: "#committees" },
-	{ label: "College Student Councils", href: "#college-councils" },
+	{ label: "About", href: "#about-usc" },
+	{ label: "Officers", href: "#officers" },
+	{ label: "Committees", href: "#committees" },
+	{ label: "CSC", href: "#college-councils" },
 ]
 
 export default function AboutPage() {

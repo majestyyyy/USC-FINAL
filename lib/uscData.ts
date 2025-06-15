@@ -1,6 +1,3 @@
-// USC shared data for all pages
-// Place this file at: /Users/majesty/Downloads/ue-manila-usc-website/lib/uscData.ts
-
 export const officers = [
   {
 		name: "Andrea Nicole Osinsao",
@@ -35,7 +32,7 @@ export const officers = [
 	},
 	{
 		name: "John Lloyd S. Parungao",
-		position: "Business Manager / Full Stack Developer",
+		position: "Business Manager",
 		image: "/images/officers/usc-business-manager.jpg",
 		bio: "Managing business operations, partnerships, and revenue-generating activities for USC. Lead developer and maintainer of the USC Website.",
 	},
